@@ -37,7 +37,9 @@ function App() {
       body: JSON.stringify(data),
     });
     const da = await response.json();
-    console.log(da);
+    setUsername("");
+    setTimer(0);
+    fetchData();
   };
 
   const fetchData = async () => {
